@@ -4,12 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextGame
+namespace TextGame.Code
 {
-    class Program
+    public class Identity
     {
-        static void Main(string[] args)
+/*
+#if DEBUG
+
+        public Identity()
         {
+
         }
+#endif
+*/
     }
 }
