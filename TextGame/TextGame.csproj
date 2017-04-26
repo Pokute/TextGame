@@ -68,9 +68,12 @@
     <Compile Include="Code\Entity.cs" />
     <Compile Include="Code\EntityList.cs" />
     <Compile Include="Code\GameAction.cs" />
+    <Compile Include="Code\GameActionSource.cs" />
     <Compile Include="Code\GameHandler.cs" />
     <Compile Include="Code\Identity.cs" />
+    <Compile Include="Code\IGameActionSource.cs" />
     <Compile Include="Code\Interaction.cs" />
+    <Compile Include="Code\Lookable.cs" />
     <Compile Include="Code\Player.cs" />
     <Compile Include="Code\Program.cs" />
     <Compile Include="Code\Room.cs" />

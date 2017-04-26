@@ -28,6 +28,15 @@ namespace TextGame.Code
         {
             var quitaction = new GameAction(identity, "quit", Quit);
             var actions = new List<GameAction>() { quitaction };
+            foreach (Identity i in entitylist.Keys)
+            {
+                foreach (Component c in entitylist[i])
+                    if (c.GetType().GetInterfaces().Contains(typeof(IGameActionSource)))
+                    {
+                        actions.AddRange((c as IGameActionSource).GetGameActions(i));
+                    }
+            }
+            //actions.AddRange(entitylist.Aggregate( .Where( .Values.OfType<IGameActionSource>().Select((gas) => { return gas.GetGameActions(); }));
             return actions;
         }
 
